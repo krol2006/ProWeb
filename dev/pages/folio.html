@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% set title = "ProWeb | Наши работы" %}
+
+{% block content %}
+	<main>
+		<section class="folio bg-content">
+			<div class="container">
+				<h1>Наши работы</h1>
+
+				<ul class="folio__list">
+					<li class="folio__item">
+						<a href="images/sideways_screenshot.jpg" data-fancybox="folio"><img src="images/sideways.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/business_screenshot.jpg" data-fancybox="folio"><img src="images/business.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/global_screenshot.jpg" data-fancybox="folio"><img src="images/global.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/health_screenshot.jpg" data-fancybox="folio"><img src="images/health_img.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/makeup_screenshot.jpg" data-fancybox="folio"><img src="images/Makeup.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/managers_screenshot.jpg" data-fancybox="folio"><img src="images/managers.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/otavan_screenshot.jpg" data-fancybox="folio"><img src="images/otavan.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/stavgeo_screenshot.jpg" data-fancybox="folio"><img src="images/stav-geo.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/stomat_screenshot.jpg" data-fancybox="folio"><img src="images/stomat_img.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/hosting_screenshot.jpg" data-fancybox="folio"><img src="images/data.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/arch_screenshot.jpg" data-fancybox="folio"><img src="images/arch.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/kopter_screenshot.jpg" data-fancybox="folio"><img src="images/kopter.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/shop_screenshot.jpg" data-fancybox="folio"><img src="images/shop.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/owl_screenshot.jpg" data-fancybox="folio"><img src="images/owl.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/denta_screenshot.jpg" data-fancybox="folio"><img src="images/Denta.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/days_screenshot.jpg" data-fancybox="folio"><img src="images/days_img.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/progressivy_screenshot.jpg" data-fancybox="folio"><img src="images/progressivy.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/goldenbee_screenshot.jpg" data-fancybox="folio"><img src="images/goldenbee.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/cooltour_screenshot.jpg" data-fancybox="folio"><img src="images/cooltour.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/best_screenshot.jpg" data-fancybox="folio"><img src="images/best.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/elitconstruct_screenshot.jpg" data-fancybox="folio"><img src="images/elitconstruct.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/landing_screenshot.jpg" data-fancybox="folio"><img src="images/landing.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/mobisoft_screenshot.jpg" data-fancybox="folio"><img src="images/mobisoft.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/rudneva_screenshot.jpg" data-fancybox="folio"><img src="images/rudneva.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/zity_screenshot.jpg" data-fancybox="folio"><img src="images/zity.png" alt="Folio item"></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="fast-contact">
+			<button type="button" data-fast-contact class="fast-contact__button" data-modal-open><i class="icon icon--phone"></i></button>
+
+			<div class="fast-contact__layout" data-modal>
+				<form class="form" method="post" action="#">
+					<div class="form__input">
+						<input type="text" placeholder="Имя">
+					</div>
+
+					<div class="form__input">
+						<input type="tel" placeholder="Телефон">
+					</div>
+
+					<div class="form__input">
+						<input type="email" placeholder="E-mail">
+					</div>
+
+					<div class="form__input form__input--textarea">
+						<textarea placeholder="Сообщение"></textarea>
+					</div>
+
+					<div class="form__submit">
+						<button type="reset" class="btn">Очистить</button>
+						<button type="submit" class="btn">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+{% endblock %}

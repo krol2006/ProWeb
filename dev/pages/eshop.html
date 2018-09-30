@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% set title = "ProWeb | Интернет магазин" %}
+
+{% block content %}
+	<main>
+		<section class="services">
+			<div class="container">
+				<h1>Cоздание и разработка интернет-магазина</h1>
+				<h3>Интернет-магазин – это сложный проект интернет-сайта, необходимый для частных фирм и предприятий с большим выбором товаров и услуг, а так же для заказа и продажи товаров или услуг через интернет.</h3>
+				<p>Интернет-магазин имеет панель редактирования информации на сайте, редактирование прайсов и каталога, форумы, гостевую книгу и другие разделы. Количество страниц Интернет-магазина зависит от Вашего ассортимента. </p>
+				<p><span>Срок изготовления Интернет-магазина от 1 - 2 месяца.</span></p>
+				<p><em>Цена создания Интернет - магазина от 40 тыс. руб</em></p>
+			</div>
+		</section>
+
+		<section class="bg-content order">
+			<div class="container">
+				<h2>Заказать интернет-магазин</h2>
+
+				<form class="form" method="post" action="#">
+					<div class="form__input">
+						<input type="text" placeholder="Имя*">
+					</div>
+
+					<div class="form__input">
+						<input type="tel" placeholder="Телефон*">
+					</div>
+
+					<div class="form__input">
+						<input type="email" placeholder="E-mail">
+					</div>
+
+					<div class="form__input form__input--textarea">
+						<textarea placeholder="Сообщение"></textarea>
+					</div>
+
+					<div class="form__submit">
+						<button type="reset" class="btn">Очистить</button>
+						<button type="submit" class="btn">Заказать</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+{% endblock %}

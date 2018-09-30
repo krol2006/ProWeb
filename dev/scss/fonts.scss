@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 600;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 700;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Gloria";
+  src: url(../fonts/GloriaHallelujah.ttf);
+}
+
+$font: "OpenSans", sans-serif;
+$fontLogo: "Gloria", sans-serif;

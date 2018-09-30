@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Icon";
+  src: url(../fonts/fontawesome-webfont.woff) format('woff'),
+       url(../fonts/fontawesome-webfont.ttf) format('truetype'),
+       url(../fonts/fontawesome-webfont.svg) format('svg');
+}
+
+.icon {
+  font-family: "Icon", sans-serif;
+
+  &--vk::before {
+    content: "\f189"
+  }
+
+  &--fb::before {
+    content: "\f09a"
+  }
+
+  &--tw::before {
+    content: "\f099";
+  }
+
+  &--insta::before {
+    content: "\f16d";
+  }
+
+  &--phone::before {
+    content: "\f095";
+  }
+
+  &--arrow::before {
+    content: "\f0d7";
+  }
+
+  &--scroller::before {
+    content: "\f062";
+  }
+}

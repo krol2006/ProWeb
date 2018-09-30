@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% set title = "ProWeb | Сайт визитка" %}
+
+{% block content %}
+	<main>
+		<section class="services">
+			<div class="container">
+				<h1>Cоздание и разработка сайта-визитки</h1>
+				<h3>Сайт-визитка – это небольшой сайт, обычно состоящий из 4 - 10 страниц, который необходим небольшим и начинающим фирмам, чтобы заявить о своем присутствии в области данного вида услуг или товара.</h3>
+				<p><span>Сайт-визитка</span> содержит информацию о деятельности Вашей компании, предлагаемых Вами товарах или услугах, фотогаллерею, контактные данные и форму для обратной связи. Срок изготовления сайта-визитки - 3 - 7 дней.</p>
+				<p><em>Цена сайта-визитки без системы управлением сайтом (CMS) - 5 000 CZK.</em><br>(Мы сами заполняем сайт материалами, которые Вы нам предоставите. Добавление нового содержимого на сайт также производится нашими сотрудниками).</p>
+				<p><em>Цена сайта-визитки с системой управлением сайтом (CMS) - 10 000 CZK.</em><br>(Вы сами сможете полностью управлять контентом сайта, добавлять/удалять страницы, фото или видео).</p>
+			</div>
+		</section>
+
+		<section class="bg-content order">
+			<div class="container">
+				<h2>Заказать сайт-визитку</h2>
+
+				<form class="form" method="post" action="#">
+					<div class="form__input">
+						<input type="text" placeholder="Имя*">
+					</div>
+
+					<div class="form__input">
+						<input type="tel" placeholder="Телефон*">
+					</div>
+
+					<div class="form__input">
+						<input type="email" placeholder="E-mail">
+					</div>
+
+					<div class="form__input form__input--textarea">
+						<textarea placeholder="Сообщение"></textarea>
+					</div>
+
+					<div class="form__submit">
+						<button type="reset" class="btn">Очистить</button>
+						<button type="submit" class="btn">Заказать</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+{% endblock %}

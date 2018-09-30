@@ -1,0 +1,174 @@
+{% extends "layout.html" %}
+
+{% set title = "ProWeb | Главная" %}
+
+{% block content %}
+	<main>
+		<section class="bg-content">
+			<div class="container">
+				<h1>Создание и продвижение сайтов в Праге</h1>
+
+				<div class="slider">
+					<ul class="slider__list" data-slider>
+						<li class="slider__item">
+							<img src="images/intro_img2.png" alt="Intro">
+						</li>
+						<li class="slider__item">
+							<img src="images/intro_img3.png" alt="Intro">
+						</li>
+						<li class="slider__item">
+							<img src="images/intro_img4.png" alt="Intro">
+						</li>
+						<li class="slider__item">
+							<img src="images/intro_img5.png" alt="Intro">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container">
+				<h1>{ PROWEB } - О нашей студии</h1>
+				<h3>О нашей студии</h3>
+				<p>О нашей студии</p>
+			</div>
+		</section>
+
+		<section class="services">
+			<div class="container">
+				<h2>Разработка сайтов</h2>
+
+				<div class="services__list">
+					<div class="services__item">
+						<p class="services__item__price">от 18.000 CZK</p>
+
+						<div class="services__item__content">
+							<p class="services__item__title"><a href="#" class="services__item__title__link">Корпоративный</a></p>
+							<p class="services__item__text">многофункциональный корпоративный сайт с уникальным дизайном</p>
+						</div>
+
+						<div class="services__item__buttons">
+							<a href="#" class="btn">заказать</a>
+							<a href="corporate.html" class="btn">подробнее</a>
+						</div>
+					</div>
+
+					<div class="services__item">
+						<p class="services__item__price">от 10.000 CZK</p>
+
+						<div class="services__item__content">
+							<p class="services__item__title"><a href="brochure.html" class="services__item__title__link">Сайт визитка</a></p>
+							<p class="services__item__text">многофункциональный корпоративный сайт-визитка с уникальным дизайном</p>
+						</div>
+
+						<div class="services__item__buttons">
+							<a href="#" class="btn">заказать</a>
+							<a href="brochure.html" class="btn">подробнее</a>
+						</div>
+					</div>
+
+					<div class="services__item">
+						<p class="services__item__price">от 33.000 CZK</p>
+
+						<div class="services__item__content">
+							<p class="services__item__title"><a href="#" class="services__item__title__link">Интернет магазин</a></p>
+							<p class="services__item__text">многофункциональный интернет магазин с уникальным дизайном</p>
+						</div>
+
+						<div class="services__item__buttons">
+							<a href="#" class="btn">заказать</a>
+							<a href="eshop.html" class="btn">подробнее</a>
+						</div>
+					</div>
+
+					<div class="services__item">
+						<p class="services__item__price">от 8.000 CZK</p>
+
+						<div class="services__item__content">
+							<p class="services__item__title"><a href="#" class="services__item__title__link">Landing page</a></p>
+							<p class="services__item__text">продающая страница "Landing page" с конверсией от 7%</p>
+						</div>
+
+						<div class="services__item__buttons">
+							<a href="#" class="btn">заказать</a>
+							<a href="#" class="btn">подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="folio bg-content">
+			<div class="container">
+				<h2>Примеры наших работ</h2>
+
+				<ul class="folio__list">
+					<li class="folio__item">
+						<a href="images/sideways_screenshot.jpg" data-fancybox="folio"><img src="images/sideways.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/business_screenshot.jpg" data-fancybox="folio"><img src="images/business.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/global_screenshot.jpg" data-fancybox="folio"><img src="images/global.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/health_screenshot.jpg" data-fancybox="folio"><img src="images/health_img.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/makeup_screenshot.jpg" data-fancybox="folio"><img src="images/Makeup.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/managers_screenshot.jpg" data-fancybox="folio"><img src="images/managers.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/otavan_screenshot.jpg" data-fancybox="folio"><img src="images/otavan.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/stavgeo_screenshot.jpg" data-fancybox="folio"><img src="images/stav-geo.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/stomat_screenshot.jpg" data-fancybox="folio"><img src="images/stomat_img.png" alt="Folio item"></a>
+					</li>
+					<li class="folio__item">
+						<a href="images/hosting_screenshot.jpg" data-fancybox="folio"><img src="images/data.png" alt="Folio item"></a>
+					</li>
+				</ul>
+
+				<div class="folio__more">
+					<a href="folio.html" class="btn">посмотреть больше работ</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="fast-contact">
+			<button type="button" data-fast-contact class="fast-contact__button" data-modal-open><i class="icon icon--phone"></i></button>
+
+			<div class="fast-contact__layout" data-modal>
+				<form class="form" method="post" action="#">
+					<div class="form__input">
+						<input type="text" placeholder="Имя">
+					</div>
+
+					<div class="form__input">
+						<input type="tel" placeholder="Телефон">
+					</div>
+
+					<div class="form__input">
+						<input type="email" placeholder="E-mail">
+					</div>
+
+					<div class="form__input form__input--textarea">
+						<textarea placeholder="Сообщение"></textarea>
+					</div>
+
+					<div class="form__submit">
+						<button type="reset" class="btn">Очистить</button>
+						<button type="submit" class="btn">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+{% endblock %}

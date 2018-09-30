@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% set title = "ProWeb | Корпоративный сайт" %}
+
+{% block content %}
+	<main>
+		<div class="services">
+			<div class="container">
+				<h1>Разработка сайта для предприятий и организаций (корпоративный сайт)</h1>
+				<h3>Cайт для предприятий и организаций – это веб-сайт, который устроит как небольшие частные фирмы, так и значительные производственные предприятия и организации.</h3>
+				<p>Сайт для предприятий и организаций может состоять из страниц, содержащих информацию о деятельности Вашей фирмы, предлагаемых Вами услугах или товарах, страницы каталога, фотоальбомы, разделы новостей или любой другой дополнительной информации, а также форму для обратной связи, гостевую книгу (отзывы) и контактные данные. <span>Количество страниц корпоративного сайта неограниченно.</span></p>
+				<p><span>Срок изготовления корпоративного сайта - от 1 до 2 недель.</span></p>
+				<p><em>Цена корпоративного сайта колеблется в пределах от 18 000 CZK до 30 000 CZK (Зависит от выбранных Вами опций).</em></p>
+			</div>
+		</div>
+
+		<div class="bg-content order">
+			<div class="container">
+				<h2>Заказать корпоративный сайт</h2>
+
+				<form class="form" method="post" action="#">
+					<div class="form__input">
+						<input type="text" placeholder="Имя*">
+					</div>
+
+					<div class="form__input">
+						<input type="tel" placeholder="Телефон*">
+					</div>
+
+					<div class="form__input">
+						<input type="email" placeholder="E-mail">
+					</div>
+
+					<div class="form__input form__input--textarea">
+						<textarea placeholder="Сообщение"></textarea>
+					</div>
+
+					<div class="form__submit">
+						<button type="reset" class="btn">Очистить</button>
+						<button type="submit" class="btn">Заказать</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+{% endblock %}

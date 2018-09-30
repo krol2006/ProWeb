@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% set title = "ProWeb | Услуги" %}
+
+{% block content %}
+	<main>
+		<div class="services">
+			<div class="container">
+				<h1>Услуги по созданию сайтов</h1>
+				<h3>Студия { PROWEB } представляет широкий спектр услуг по созданию сайтов любого формата и сложности.</h3>
+				<p><span>Сайты-визитка, корпоративные сайты, интернет-магазины</span> - программисты студии <span>{ PROWEB }</span> разрабатывали их бесчисленное количество раз. Заказав у нас веб-сайт, вы получаете красивый дизайн, индивидуальный стиль, всю техническую поддержку сайта, а также консультации и полное обучение по управлению контентом сайта с помощью CMS-системы. </p>
+				<p>Помимо этого, в списке услуг, оказываемых студией <span>{ PROWEB }</span> входят раскрутка и поисковое (SEO) продвижение сайта, регистрация в поисковых системах , регистрация доменных имен, советы по выбору хостига, создание уникальных текстов - в общем все те услуги, без которых невозможна нормальная работа сайта в Интернете.</p>
+
+				<div class="services__list services__list--page">
+					<div class="services__item">
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="fast-contact">
+			<button type="button" data-fast-contact class="fast-contact__button" data-modal-open><i class="icon icon--phone"></i></button>
+
+			<div class="fast-contact__layout" data-modal>
+				<form class="form" method="post" action="#">
+					<div class="form__input">
+						<input type="text" placeholder="Имя">
+					</div>
+
+					<div class="form__input">
+						<input type="tel" placeholder="Телефон">
+					</div>
+
+					<div class="form__input">
+						<input type="email" placeholder="E-mail">
+					</div>
+
+					<div class="form__input form__input--textarea">
+						<textarea placeholder="Сообщение"></textarea>
+					</div>
+
+					<div class="form__submit">
+						<button type="reset" class="btn">Очистить</button>
+						<button type="submit" class="btn">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+{% endblock %}
