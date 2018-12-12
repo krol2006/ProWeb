@@ -1,4 +1,5 @@
 # Инструкции:
+* Скачать и установит Node.js https://nodejs.org/en/ "Recommended For Most Users"
 * Скачать архив https://github.com/krol2006/ProWeb/archive/develop.zip
 * Зайти терминалом в папку dev
 * Команда npm install
