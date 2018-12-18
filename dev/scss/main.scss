@@ -22,7 +22,7 @@ body {
 
 h1 {
   font-size: 48px;
-  color: $orange;
+  color: #142d5f;
   margin-bottom: 25px;
   text-align: center;
   line-height: 1;
@@ -86,12 +86,12 @@ main {
 
   &__panel {
     height: 40px;
-    background: linear-gradient(to bottom, #222222, #111111);
+    background: #142d5f;
   }
 
   &__content {
     height: 85px;
-    background: $orange;
+    background: #f7f7f7;
   }
 
   &--fixed {
@@ -193,7 +193,7 @@ main {
       text-transform: uppercase;
       font-weight: bold;
       text-decoration: none;
-      color: $brown;
+      color: #BFD600;
     }
   }
 
@@ -216,8 +216,7 @@ main {
       position: relative;
 
       &--active #{$menu}__link, &:hover #{$menu}__link {
-        @extend %textShadow;
-        background-color: $brown;
+        color: #c4d600;
       }
 
       &--hasmenu {
@@ -266,12 +265,12 @@ main {
     }
 
     &__link {
-      color: white;
+      color: black;
       display: flex;
       height: 100%;
       text-decoration: none;
-      font-weight: 600;
-      text-transform: uppercase;
+      font-size: 18px;
+      text-transform: capitalize;
       align-items: center;
       justify-content: center;
       transition: all .2s;
@@ -283,7 +282,6 @@ main {
 
 .bg-content {
   overflow: hidden;
-  background: url("../images/intro_bg.jpg");
   box-sizing: border-box;
   padding: 45px 0;
 }
@@ -299,7 +297,6 @@ main {
     float: left;
     height: 100%;
     width: 25%;
-    opacity: .6;
     border-right: 1px solid $brown;
     overflow: hidden;
     transition: opacity .5s;
@@ -416,7 +413,7 @@ main {
     position: fixed;
     width: 70px;
     height: 70px;
-    background: $orange;
+    background: #BFD600;
     bottom: 335px;
     right: 150px;
     cursor: pointer;
