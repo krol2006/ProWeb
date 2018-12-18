@@ -67,7 +67,6 @@ p {
 
 main {
   min-height: calc(100vh - 245px);
-  background: $grey;
 }
 
 .header {
@@ -114,7 +113,7 @@ main {
 
     #{$header}__menu__item--hasmenu {
       i {
-        bottom: 1px;
+        bottom: -5px;
       }
     }
   }
@@ -152,7 +151,7 @@ main {
       transition: all .2s linear;
 
       &:hover {
-        @extend %textShadow;
+        color: #BFD600;
       }
     }
   }
@@ -170,7 +169,7 @@ main {
       margin-left: 15px;
 
       &--active #{$langs}__link {
-        @extend %textShadow;
+        color: #BFD600;
       }
     }
 
@@ -182,7 +181,7 @@ main {
       transition: all .2s linear;
 
       &:hover {
-        @extend %textShadow;
+        color: #BFD600;
       }
     }
   }
@@ -230,7 +229,7 @@ main {
         visibility: hidden;
         opacity: 0;
         position: absolute;
-        background: $brown;
+        background: #f7f7f7;
         left: 0;
         z-index: 2000;
         transition: all .1s;
@@ -239,22 +238,22 @@ main {
           transition: all .2s;
           height: 30px;
 
-          &:hover {
-            background: $orange;
-          }
         }
 
         &__link {
           display: block;
           box-sizing: border-box;
           text-decoration: none;
-          color: white;
+          color: black;
           padding: 0 15px;
           white-space: nowrap;
-          text-transform: uppercase;
-          font-weight: 600;
+          text-transform: capitalize;
           text-align: left;
           line-height: 30px;
+
+          &:hover {
+            color: #BFD600;
+          }
         }
       }
 
@@ -521,11 +520,11 @@ main {
         min-width: 90px;
         box-sizing: border-box;
         padding-right: 5px;
-        color: grey;
+        color: black;
       }
 
       a {
-        color: white;
+        color: black;
 
         &:hover {
           text-decoration: none;
@@ -592,6 +591,10 @@ main {
   height: 120px;
   background: $orange;
 
+  a {
+    color: #BFD600;
+  }
+
   &__layout {
     position: relative;
     height: 100%;
@@ -614,9 +617,8 @@ main {
 
     &__link {
       font-size: 24px;
-      color: $brown;
       text-decoration: none;
-
+      
       &:hover {
         color: white;
       }
@@ -624,10 +626,11 @@ main {
   }
 
   &__copyright {
+    color: white;
     height: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column;    
   }
 
   &__contact {
@@ -635,6 +638,7 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color: white;
   }
 
   &__scroller {

@@ -1,22 +1,23 @@
 .btn {
+  height: 33px;
   display: inline-flex;
   box-sizing: border-box;
   padding: 0 10px;
-  height: 30px;
-  background: linear-gradient(to bottom, #ffa84c 0%,$orange 100%);
+  background: #c4d600;
   text-decoration: none;
   border: none;
-  font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: white;
   align-items: center;
   cursor: pointer;
+  border-radius: 3px;
+  transition: all .2s;
 
   &:focus {
     outline: none;
   }
 
   &:hover {
-    background: linear-gradient(to top, #ffa84c 0%,$orange 100%);
+    background: $orange;
   }
 }
