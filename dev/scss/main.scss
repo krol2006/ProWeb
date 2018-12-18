@@ -151,7 +151,7 @@ main {
       transition: all .2s linear;
 
       &:hover {
-        color: #BFD600;
+        color: #51ce42;
       }
     }
   }
@@ -169,7 +169,7 @@ main {
       margin-left: 15px;
 
       &--active #{$langs}__link {
-        color: #BFD600;
+        color: #51ce42;
       }
     }
 
@@ -181,7 +181,7 @@ main {
       transition: all .2s linear;
 
       &:hover {
-        color: #BFD600;
+        color: #51ce42;
       }
     }
   }
@@ -192,7 +192,7 @@ main {
       text-transform: uppercase;
       font-weight: bold;
       text-decoration: none;
-      color: #BFD600;
+      color: #51ce42;
     }
   }
 
@@ -215,7 +215,7 @@ main {
       position: relative;
 
       &--active #{$menu}__link, &:hover #{$menu}__link {
-        color: #c4d600;
+        color: #51ce42;
       }
 
       &--hasmenu {
@@ -252,7 +252,7 @@ main {
           line-height: 30px;
 
           &:hover {
-            color: #BFD600;
+            color: #51ce42;
           }
         }
       }
@@ -412,8 +412,8 @@ main {
     position: fixed;
     width: 70px;
     height: 70px;
-    background: #BFD600;
-    bottom: 335px;
+    background: #51ce42;
+    bottom: 195px;
     right: 150px;
     cursor: pointer;
     border: none;
@@ -592,7 +592,7 @@ main {
   background: $orange;
 
   a {
-    color: #BFD600;
+    color: #51ce42;
   }
 
   &__layout {

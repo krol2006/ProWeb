@@ -1,5 +1,9 @@
 .container {
   height: 100%;
-  max-width: 1440px;
+  max-width: 1480px;
   margin: 0 auto;
+
+  &--lg {
+    max-width: 1680px; 
+  }
 }
