@@ -1,4 +1,9 @@
 @font-face {
+  font-family: "Helv";
+  src: url(../fonts/helv.ttf);
+}
+
+@font-face {
   font-family: "OpenSans";
   font-weight: 400;
   src: url(../fonts/OpenSans-Regular.ttf);
@@ -21,5 +26,5 @@
   src: url(../fonts/GloriaHallelujah.ttf);
 }
 
-$font: "OpenSans", sans-serif;
+$font: "Helv", sans-serif;
 $fontLogo: "Gloria", sans-serif;
