@@ -1,6 +1,6 @@
 .btn {
   height: 33px;
-  display: inline-flex;
+  display: inline-block;
   box-sizing: border-box;
   padding: 0 10px;
   background: #51ce42;
@@ -12,6 +12,7 @@
   cursor: pointer;
   border-radius: 3px;
   transition: all .2s;
+  line-height: 33px;
 
   &:focus {
     outline: none;

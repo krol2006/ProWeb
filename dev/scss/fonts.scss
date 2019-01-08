@@ -3,5 +3,10 @@
   src: url(../fonts/helv.ttf);
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
 $font: "Helv", sans-serif;
-$fontLogo: "Gloria", sans-serif;
+$fontPoppinsMedium: "Poppins", sans-serif;
