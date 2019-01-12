@@ -7,7 +7,7 @@ $(document).ready(function () {
 	const modalOpen = $("[data-modal-open]");
 	const modal = $("[data-modal]");
 	const checkMenu = () => {
-		if ($(window).scrollTop() > 125){
+		if ($(window).scrollTop() > 1){
 			header.addClass(clHeaderFixed);
 		} else {
 			header.removeClass(clHeaderFixed);

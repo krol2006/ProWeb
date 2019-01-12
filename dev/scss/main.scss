@@ -26,6 +26,10 @@ h1 {
   margin-bottom: 25px;
   text-align: center;
   line-height: 1;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 h2 {
@@ -71,6 +75,13 @@ main {
 
 .header {
   $header: &;
+  background: white;
+  height: 100px;
+  transition: height .2s;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2000;
 
   &__layout {
     height: 100%;
@@ -80,30 +91,26 @@ main {
   }
 
   &__content {
-    height: 100px;
+    height: 100%;
   }
 
   &--fixed {
-    height: 125px;
+    height: 68px;
+    position: fixed;
 
-    #{$header}__content {
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: 0;
-      height: 40px;
-      z-index: 2000;
+    #{$header}__logo {
+      &__link {
+        font-size: 24px;
 
-      #{$header}__logo {
-        &__link {
-          font-size: 24px;
+        img {
+          margin-top: 0;
         }
       }
-    }
+    }    
 
     #{$header}__menu__item--hasmenu {
       i {
-        bottom: -5px;
+        bottom: 5px;
       }
     }
   }
@@ -146,36 +153,6 @@ main {
     }
   }
 
-  &__langs {
-    margin-right: 15px;
-
-    $langs: &;
-
-    &__list {
-      display: flex;
-    }
-
-    &__item {
-      margin-left: 15px;
-
-      &--active #{$langs}__link {
-        color: #51ce42;
-      }
-    }
-
-    &__link { 
-      text-transform: uppercase;
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-      transition: all .2s linear;
-
-      &:hover {
-        color: #51ce42;
-      }
-    }
-  }
-
   &__logo {
     min-width: 15vw;
     height: 100%;
@@ -188,6 +165,7 @@ main {
       img {
         max-height: 100%;
         margin-top: 4px;
+        object-fit: cover;
       } 
     }
   }
@@ -195,7 +173,6 @@ main {
   &__menu {
     flex-grow: 1;
     height: 100%;
-
     $menu: &;
 
     &__list {
@@ -213,6 +190,7 @@ main {
 
       &--active #{$menu}__link, &:hover #{$menu}__link {
         color: #51ce42;
+        background: #f9f9f9;
       }
 
       &--hasmenu {
@@ -222,33 +200,60 @@ main {
         }
       }
 
+      &--langs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover #{$menu}__link {
+          color: black;
+        }
+
+        #{$menu}__link {
+          height: auto;
+          font-size: 13px;
+          margin-right: 15px;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          &:hover {
+            color: #51ce42;
+          }
+        }
+      }
+
       &__submenu {
+        width: 100%;
         visibility: hidden;
         opacity: 0;
         position: absolute;
-        background: #f7f7f7;
+        background:rgba(38,38,38,.98);
         left: 0;
         z-index: 2000;
-        transition: all .1s;
+        margin-top: 35px;
+        transition: .25s all cubic-bezier(.65,.05,.36,1);
 
         &__item {
-          transition: all .2s;
-          height: 30px;
+          height: 68px;
+          border-bottom: 1px solid rgba(255,255,255,.15);
 
+          &:last-of-type {
+            border-bottom: none;
+          }
         }
 
-        &__link { 
-          font: 15px $fontPoppinsMedium; 
+        &__link {
+          font: 16px $font;
           display: block;
           box-sizing: border-box;
           text-decoration: none;
-          color: black;
+          color: rgba(255,255,255,.6);
           padding: 0 15px;
           white-space: nowrap;
-          font-weight: bold;
-          text-transform: capitalize;
-          text-align: left;
-          line-height: 30px;
+          text-align: center;
+          line-height: 68px;
 
           &:hover {
             color: #51ce42;
@@ -259,17 +264,17 @@ main {
       &:hover &__submenu {
         visibility: visible;
         opacity: 1;
+        margin-top: 0;
       }
     }
 
     &__link {
-      font: 15px $fontPoppinsMedium; 
-      color: black;
+      font: bold 15px $font;
+      color: #262626;
       display: flex; 
       height: 100%;
       text-decoration: none;
-      font-size: 18px;
-      text-transform: capitalize;
+      text-transform: uppercase;
       align-items: center;
       justify-content: center;
       transition: all .2s;
@@ -291,6 +296,10 @@ main {
     right: 0;
     top: 60px;
     color: #fff;
+
+    a {
+      color: #fff;
+    }
   }
 }
 
@@ -603,6 +612,7 @@ main {
 .footer {
   height: 120px;
   background: $orange;
+  margin-top: 100px;
 
   a {
     color: #51ce42;
