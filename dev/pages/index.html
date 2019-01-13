@@ -1,98 +1,100 @@
 {% extends "layout.html" %}
 
-{% set title = "ProWeb | Главная" %}
+{% set title = "WeBrave | Главная" %}
 
 {% block content %}
 	<main>
 		<section class="bg-content">
-
-				<h1>Создание и <a href="#">продвижение</a> сайтов в Праге</h1>
-				<img src="images/slider_bg.jpg" alt="Slider">
-				<!-- <div class="slider">
-					<ul class="slider__list" data-slider>
-						<li class="slider__item">
-							<img src="images/intro_img2.png" alt="Intro">
-						</li>
-						<li class="slider__item">
-							<img src="images/intro_img3.png" alt="Intro">
-						</li>
-						<li class="slider__item">
-							<img src="images/intro_img4.png" alt="Intro">
-						</li>
-						<li class="slider__item">
-							<img src="images/intro_img5.png" alt="Intro">
-						</li>
-					</ul>
-				</div> -->
-
+			<h1>Создание и <a href="#">продвижение</a> сайтов в Праге</h1>
+			<img src="images/slider_bg.jpg" alt="Slider">
 		</section>
 
-		<section class="about">
-			<div class="container">
-				<h1>{ PROWEB } - О нашей студии</h1>
-				<h3>О нашей студии</h3>
-				<p>О нашей студии</p>
+		<section class="about" id="about">
+			<div class="container container--sm">
+				<div class="about__layout">
+					<div class="about__title">
+						<p>О нас</p>
+					</div>
+
+					<div class="about__text">
+						<p>Продвижение, раскрутка, SEO оптимизация сайтов - это все мы, фирма которая занимается этим в Праге, и подходит к продвижению сайта в ТОП используя все наши творческие стороны, и большую фантазию, а не просто используя готовые механические методы.
+							Ведь правда, поисковые роботы умнеют с каждым днем и нужно иметь не мало смекалки, и фантазии, что бы влюбить их в сайт, и дать им понять, что именно Ваш сайт на базе десятков, сотен, а то и тысяч подобных по тематике сайтов является самым Информативным, самым Быстрым, и самым Удобным. В этом и заключается наша миссия уже многие годы.
+							Путем проб и ошибок, мы поняли в какое вечернее платье или смокинг, нужно нарядить ваш сайт, дабы именно его поисковый робот поднял в ТОП и не отпускал!
+						</p>
+					</div>
+
+					<ul class="about__list">
+						<li>Мы даем гарантию, что Ваш сайт будет в ТОПе.</li>
+						<li>Мы всегда поддерживаем наших клиентов, как во время продвижения, так и после.</li>
+						<li>Вы будите получать отчеты, о состоянии Вашего сайта каждую неделю.</li>
+						<li>Для вашего спокойствия, мы предоставляем гибкую систему оплаты.</li>
+						<li>Мы всегда открыты для предложений и используем индивидуальный подход к каждому клиенту.</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
-		<section class="services">
-			<div class="container">
-				<h2>Разработка сайтов</h2>
+		<section class="serv" id="serv">
+			<div class="container"> 
+				<div class="serv__title">
+					<p>Наши услуги</p>
+				</div>
 
-				<div class="services__list">
-					<div class="services__item">
-						<p class="services__item__price">от 18.000 CZK</p>
-
-						<div class="services__item__content">
-							<p class="services__item__title"><a href="#" class="services__item__title__link">Корпоративный</a></p>
-							<p class="services__item__text">многофункциональный корпоративный сайт с уникальным дизайном</p>
+				<div class="serv__list">
+					<div class="serv__item wow slideInLeft" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: slideInLeft;">
+						<div class="serv__item__img">
+							<img src="images/sev_item1.png">
 						</div>
 
-						<div class="services__item__buttons">
-							<a href="#" class="btn">заказать</a>
-							<a href="corporate.html" class="btn">подробнее</a>
-						</div>
-					</div>
-
-					<div class="services__item">
-						<p class="services__item__price">от 10.000 CZK</p>
-
-						<div class="services__item__content">
-							<p class="services__item__title"><a href="brochure.html" class="services__item__title__link">Сайт визитка</a></p>
-							<p class="services__item__text">многофункциональный корпоративный сайт-визитка с уникальным дизайном</p>
+						<div class="serv__item__title">
+							<p>Сайт в ТОП</p>
 						</div>
 
-						<div class="services__item__buttons">
-							<a href="#" class="btn">заказать</a>
-							<a href="brochure.html" class="btn">подробнее</a>
+						<div class="serv__item__text">
+							<p>Полная СЕО оптимизация от начала до конца, с полным набором функций,
+								настройкой сайта, регистрацией во всех сервисах, рекламой, отчетностью и т.д.
+							</p>
+						</div>
+
+						<div class="serv__item__buttons">
+							<a class="btn" href="agenturni.html">подробнее</a>
 						</div>
 					</div>
 
-					<div class="services__item">
-						<p class="services__item__price">от 33.000 CZK</p>
-
-						<div class="services__item__content">
-							<p class="services__item__title"><a href="#" class="services__item__title__link">Интернет магазин</a></p>
-							<p class="services__item__text">многофункциональный интернет магазин с уникальным дизайном</p>
+					<div class="serv__item wow slideInUp" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: slideInUp;">
+						<div class="serv__item__img">
+							<img src="images/sev_item2.png">
 						</div>
-
-						<div class="services__item__buttons">
-							<a href="#" class="btn">заказать</a>
-							<a href="eshop.html" class="btn">подробнее</a>
+						<div class="serv__item__title">
+							<p>Рекламирование</p>
+						</div>
+						<div class="serv__item__text">
+							<p>Качественная настройка и создание контекстной, баннерной рекламы в
+								популярных поисковых сервисах с минимальными затратами за клик и т.д.
+							</p>
+						</div>
+						<div class="serv__item__buttons">
+							<a class="btn" href="outsourcing.html">подробнее</a>
 						</div>
 					</div>
 
-					<div class="services__item">
-						<p class="services__item__price">от 8.000 CZK</p>
-
-						<div class="services__item__content">
-							<p class="services__item__title"><a href="#" class="services__item__title__link">Landing page</a></p>
-							<p class="services__item__text">продающая страница "Landing page" с конверсией от 7%</p>
+					<div class="serv__item wow slideInRight" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: slideInRight;">
+						<div class="serv__item__img">
+							<img src="images/sev_item3.png">
 						</div>
 
-						<div class="services__item__buttons">
-							<a href="#" class="btn">заказать</a>
-							<a href="#" class="btn">подробнее</a>
+						<div class="serv__item__title">
+							<p>Базовый сервис</p>
+						</div>
+
+						<div class="serv__item__text">
+							<p>Базовая аналитика, настройка и адаптация Вашего сайта под популярные
+								поисковые системы, регистрация в определенных сервисах, консультацией, прогнозами и т.д.
+							</p>
+						</div>
+
+						<div class="serv__item__buttons">
+							<a class="btn" href="#">подробнее</a>
 						</div>
 					</div>
 				</div>

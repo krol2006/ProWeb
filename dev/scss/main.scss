@@ -83,6 +83,10 @@ main {
   top: 0;
   z-index: 2000;
 
+  @include breakpoint($lg) {
+    height: 80px;
+  }
+
   &__layout {
     height: 100%;
     display: flex;
@@ -246,14 +250,21 @@ main {
 
         &__link {
           font: 16px $font;
-          display: block;
+          display: flex;
+          height: 100%;
+          align-items: center;
           box-sizing: border-box;
           text-decoration: none;
-          color: rgba(255,255,255,.6);
+          color: rgba(255, 255, 255, .6);
           padding: 0 15px;
-          white-space: nowrap;
-          text-align: center;
-          line-height: 68px;
+          justify-content: center;
+
+          @include breakpoint($lg) {
+            padding: {
+              left: 5px;
+              right: 5px;
+            }
+          }
 
           &:hover {
             color: #51ce42;
@@ -329,88 +340,112 @@ main {
 }
 
 .about {
-  padding: 45px 0;
-  box-sizing: border-box;
-}
+  &__layout {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 
-.services {
-  padding: 45px 0;
-  box-sizing: border-box;
+  &__title {
+      font: normal 24px $font;
+      
+      margin: {
+          top: 90px;
+          bottom: 30px;
+      }
+
+      p {
+        font-weight: normal;
+      }
+  }
+
+  &__text {
+      font-size: 20px;
+      text-align: justify;
+      font-weight: normal;
+      margin-bottom: 48px;
+      line-height: 26px;
+
+      p {
+        font-weight: normal;
+      }
+  }
 
   &__list {
-    display: flex;
-    justify-content: space-between;
+      font-size: 18px;
+
+      li {
+          background: url(../images/about_list_bg.png) no-repeat;
+          padding-left: 35px;
+          margin-bottom: 22px;
+          background-size: 27px;
+          line-height: 26px;
+      }
+  }
+}
+
+.serv {
+  margin-bottom: 96px;
+
+  &__title{
+      @extend .about__title;
+
+      margin: {
+          left: 70px;
+          bottom: 42px;
+          top: 70px;
+      }
+  }
+
+  &__list {
+      display: flex;
+      justify-content: space-between;
   }
 
   &__item {
-    max-width: 280px;
-    background: $grey;
-    border: 2px dashed $darkGrey;
-    box-sizing: border-box;
-    padding: 7px;
-    position: relative;
-
-    &__price {
-      position: absolute;
-      color: white;
-      background: $brown;
-      height: 30px;
-      box-sizing: border-box;
-      padding: 0 10px;
-      right: -10px;
-      top: -10px;
-      font-weight: 600;
-      line-height: 30px;
-
-      @extend %textShadow;
-    }
-
-    &__content {
-      box-sizing: border-box;
-      padding: 7px;
-      min-height: 105px;
-    }
-
-    &__title {
-      &__link {
-        color: $brown;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1;
-
-        &:hover {
-          text-decoration: none;
-        }
+      flex: 0 1 33%;
+      max-width: 370px;
+      -webkit-box-shadow: 0 0 25px 0 rgba(153,147,153,1);
+      -moz-box-shadow: 0 0 25px 0 rgba(153,147,153,1);
+      box-shadow: 0 0 25px 0 rgba(153,147,153,1);
+      
+      &__img {
+          min-height: 125px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
       }
-    }
 
-    &__text {
-      margin: {
-        top: 15px;
-      };
-      color: $brown;
-    }
+      &__title {
+          font-size: 22px;
+          text-align: center;
+          margin-bottom: 20px;
 
-    &__buttons {
-      padding: 0 7px;
-      margin-top: 10px;
-      display: flex;
-      justify-content: space-between;
+          p {
+            font-weight: normal;
+          }
+      }
 
-      > * {
-        flex: 0 1 auto;
-      } 
-    }
-  }
+      &__text {
+          font-size: 18px;
+          padding: {
+              left: 20px;
+              right: 20px;
+          }
+          margin-bottom: 40px;
+          text-align: center;
+          min-height: 157px;
+          line-height: 26px;
 
-  &__list--page {
-    margin-top: 30px;
-  }
+          p {
+            font-weight: normal;
+          }
+      }
 
-  &__list--page &__item {
-    max-width: 48%;
-    border: none;
-    background: none;
+      &__buttons {
+          margin-bottom: 65px;
+          text-align: center;
+      }
   }
 }
 
@@ -513,7 +548,7 @@ main {
 
 .contact {
   box-sizing: border-box;
-  padding-bottom: 70px;
+  padding-top: 200px;
 
   &__layout {
     display: flex;
